@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
   server: {
@@ -7,8 +6,5 @@ export default defineConfig({
     port: 3000,
     strictPort: true,
     allowedHosts: true,
-  },
-	plugins: [
-    basicSsl()
-  ]
+  }
 });
